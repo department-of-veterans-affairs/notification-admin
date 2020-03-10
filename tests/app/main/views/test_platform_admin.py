@@ -280,6 +280,7 @@ def test_format_stats_by_service_returns_correct_values(fake_uuid):
     assert ret[0]['stats']['sms']['delivered'] == 7
     assert ret[0]['stats']['sms']['failed'] == 11
 
+
 @pytest.mark.parametrize('endpoint, restricted, research_mode', [
     ('main.trial_services', True, False),
     ('main.live_services', False, False)

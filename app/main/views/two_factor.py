@@ -12,13 +12,13 @@ from flask_babel import _
 from flask_login import current_user
 from itsdangerous import SignatureExpired
 from notifications_utils.url_safe_token import check_token
-from user_agents import parse
 
 from app import user_api_client
 from app.main import main
 from app.main.forms import TwoFactorForm
 from app.models.user import User
 from app.utils import redirect_to_sign_in
+from user_agents import parse
 
 
 @main.route('/two-factor-email-sent', methods=['GET'])
